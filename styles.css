@@ -3,7 +3,7 @@
 	display:grid;
 	height:100vh;
 	grid-template-columns:repeat(4,1fr);
-	grid-template-rows:repeat(5, 1fr);
+	grid-template-rows:124px 124px 124px 124px 124px;
 	grid-gap:0.5em;
 	grid-template-areas:
 		"header header header header header header header header"
