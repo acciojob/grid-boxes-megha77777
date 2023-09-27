@@ -1,1 +1,49 @@
 /*  your css code here. If applicable */
+#grid{
+	display:grid;
+	height:100vh;
+	grid-template-columns:repeat(4,1fr);
+	grid-template-rows:repeat(5, 1fr);
+	grid-gap:0.5em;
+	grid-template-areas:
+		"header header header header header header header header"
+		"sidebar main area area area area area area"
+		"sidebar sec sec section section section section section"
+		"sidebar content1 content2 content3 content3 content3 content3 content3"
+		"sidebar footer footer footer footer footer footer footer";
+}
+.grid-item{
+	background-color:green;
+	color:white;
+	font-size:39px;
+}
+.item-1{
+	grid-area:header;
+}
+.item-2{
+	grid-area:sidebar;
+}
+.item-3{
+	grid-area:main;
+}
+.item-4{
+	grid-area:area;
+}
+.item-5{
+	grid-area:sec;
+}
+.item-6{
+	grid-area:section;
+}
+.item-7{
+	grid-area:content1;
+}
+.item-8{
+	grid-area:content2;
+}
+.item-9{
+	grid-area:content3;
+}
+.item-10{
+	grid-area:footer;
+}
