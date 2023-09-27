@@ -2,8 +2,8 @@
 #grid{
 	display:grid;
 	height:100vh;
-	grid-template-columns:242.5px 242.5px 242.5px 242.5px;
-	grid-template-rows:124px 124px 124px 124px 124px;
+	grid-template-columns:repeat(4,1fr);
+	grid-template-rows:repeat(5,1fr);
 	grid-gap:0.5em;
 	grid-template-areas:
 		"header header header header header header header header"
@@ -18,10 +18,9 @@
 	font-size:39px;
 }
 .item-1{
-/* 	grid-area:header; */
+	grid-area:header;
 /* 	grid-column-start:1;
 	grid-column-end:8; */
-	grid-column: span 4 / auto;
 }
 .item-2{
 	grid-area:sidebar;
